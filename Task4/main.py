@@ -1,3 +1,4 @@
+#imports libraries
 import os
 import random
 from builtins import open, str, print, int, input
@@ -55,7 +56,7 @@ def session_file():
     file_handler.write(password)
     file_handler.close()
 
-
+#main program
 status = True
 while status:
     choice = staff_login()
@@ -92,7 +93,7 @@ while status:
                 if get_request == 2:
                     accountNumber = get_account_no()
                     account_number = int(input('Enter account number: '))
-                    if account_number != accountNumber:
+                    if account_number == int(accountNumber):
                         account_info = get_account_info()
                         print(account_info)
 
@@ -121,7 +122,7 @@ while status:
                 if get_request == 2:
                     accountNumber = get_account_no()
                     account_number = int(input('Enter account number: '))
-                    if account_number != accountNumber:
+                    if account_number == int(accountNumber):
                         account_info = get_account_info()
                         print(account_info)
 
