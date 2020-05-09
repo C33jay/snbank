@@ -1,2 +1,1 @@
-['Chijioke', 10000, 'savings', 'elijah@']
-2161983510
+
